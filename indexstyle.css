@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(to bottom, #2E5968, #93B3C7, #ffff);
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  columns: whitesmoke;
+}
+
+.logopic{
+  width: 100px;
+  height: auto;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.link{
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul{
+  list-style: none;
+}
+
+.navbar-links{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links li{
+  margin: 0 30px;
+}
+header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/homepage/Homepage_bg.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content{
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header-content h1{
+  font-size: 7vmin;
+}
+.menu{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/*section*/
+section{
+  width: 80%;
+  margin: 80px;
+  
+}
+
+.sectionContent{
+  text-align: left;
+  font-size: 4vmin;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row .col img{
+ width: 140%;
+}
+@media only screen and (max-width:850px){
+  .menu{
+    display: block;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .navbar-links{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: skyblue;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu{
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+  .navbar-links li{
+    margin: 30px auto;
+  }
+
+  .row{
+  flex-direction: column;
+  }
+}
