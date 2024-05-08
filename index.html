@@ -6,11 +6,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--
-   <meta name="description" content="Addressing mental fatigue among college students is crucial for their well-being and academic success. Strategies include promoting healthy habits, providing support services like counseling, fostering a supportive campus culture, and encouraging faculty flexibility. These efforts can help students manage stress and thrive in their academic pursuits.">
-   <meta name="keywords" content="Mental fatigue, academic stress, time-management, financial struggle, peer pressure, sleep deprivation, stress, pressure, fatigue">
-   -->
    <link rel="icon" type="image/jpg" href="images/homepage/Legazpi_City_Tourism_Logo.png">
+
  </head>
  <body>
   
@@ -60,16 +57,129 @@
   <div class="line"></div>
 
   <section class="look">
-    <div class="row">
-      <div class="lf">
-        <h2>What are you looking for?</h2>
-        <a href="">Tourist Attractions,</a>
-        <a href="">Accomodations,</a>
-        <a href="">Restaurants,</a>
-        <a href="">Shopping Centers</a>
+    <div class="lf">
+      <h2>What are you looking for?</h2>
+      <a href="#" onclick="showTourist(); event.preventDefault();">Tourist Attractions,</a>
+      <a href="#" onclick="showAccomodations(); event.preventDefault();">Accomodations,</a>
+      <a href="#" onclick="showRestaurants(); event.preventDefault();">Restaurants,</a>
+      <a href="#" onclick="showShopping(); event.preventDefault();">Shopping Centers</a>
+    </div>
+    <div class="container">
+      <div class="image-list-tourist">
+          <div class="image-part1">
+              <img src="images/homepage/tourist spot/1.png" alt="">
+          </div>
+          <div class="image-part1">
+            <img src="images/homepage/tourist spot/2.png" alt="">
+          </div>
+          <div class="image-part1">
+            <img src="images/homepage/tourist spot/3.png" alt="">
+          </div>
+          <div class="image-part1">
+            <img src="images/homepage/tourist spot/4.png" alt="">
+          </div>
+          <div class="image-part1">
+            <img src="images/homepage/tourist spot/5.png" alt="">
+          </div>
+          <div class="image-part1">
+            <img src="images/homepage/tourist spot/6.png" alt="">
+          </div>
+          <div class="image-part1">
+            <img src="images/homepage/tourist spot/7.png" alt="">
+          </div>
+          <div class="image-part1">
+            <img src="images/homepage/tourist spot/8.png" alt="">
+          </div>
+          <div class="image-part1">
+            <img src="images/homepage/tourist spot/9.png" alt="">
+          </div>
       </div>
+
+        <div class="image-list-accomodations"   style="display: none">
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/1.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/2.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/3.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/4.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/5.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/6.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/7.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/8.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/9.png" alt="">
+          </div>
+          <div class="image-part2">
+            <img src="images/homepage/accomodations/10.png" alt="">
+          </div>
+        </div>
+        <div class="image-list-restaurants" style="display: none">
+          <div class="image-part">
+            <img src="images/homepage/restaurants/1.png" alt="">
+            </div>
+          <div class="image-part">
+            <img src="images/homepage/restaurants/2.png" alt="">
+            </div>
+          <div class="image-part">
+            <img src="images/homepage/restaurants/3.png" alt="">
+            </div>
+          <div class="image-part">
+            <img src="images/homepage/restaurants/4.png" alt="">
+            </div>
+          <div class="image-part">
+            <img src="images/homepage/restaurants/5.png" alt="">
+            </div>
+          <div class="image-part">
+            <img src="images/homepage/restaurants/6.png" alt="">
+            </div>
+          <div class="image-part">
+            <img src="images/homepage/restaurants/7.png" alt="">
+            </div>
+          <div class="image-part">
+            <img src="images/homepage/restaurants/8.png" alt="">
+            </div>
+
+        </div>
+        <div class="image-list-shopping" style="display: none">
+          <div class="image-part">
+            <img src="images/homepage/malls/1.png" alt="">
+          </div>
+     
+          <div class="image-part">
+            <img src="images/homepage/malls/2.png" alt="">
+          </div>
+     
+          <div class="image-part">
+            <img src="images/homepage/malls/3.png" alt="">
+          </div>
+     
+          <div class="image-part">
+            <img src="images/homepage/malls/4.png" alt="">
+          </div>
+     
+          <div class="image-part">
+            <img src="images/homepage/malls/5.png" alt="">
+          </div>
+     
+          </div>
     </div>
   </section>
+
+  <div class="line"></div>
 
   <script>
    const menuBtn = document.querySelector('.menu')
@@ -77,6 +187,39 @@
    menuBtn.addEventListener('click',()=>{
     navlinks.classList.toggle('mobile-menu');
    })
+
+  function showTourist(){
+    document.querySelectorAll('.image-list-tourist').forEach(function(element) {
+        element.style.display = "grid";
+    });
+    document.querySelectorAll('.image-list-accomodations, .image-list-restaurants, .image-list-shopping').forEach(function(element) {
+        element.style.display = "none";
+    });
+  }
+  function showAccomodations(){
+    document.querySelectorAll('.image-list-accomodations').forEach(function(element) {
+        element.style.display = "grid";
+    });
+    document.querySelectorAll('.image-list-tourist, .image-list-restaurants, .image-list-shopping').forEach(function(element) {
+        element.style.display = "none";
+    });
+  }
+  function showRestaurants(){
+    document.querySelectorAll('.image-list-restaurants').forEach(function(element) {
+        element.style.display = "grid";
+    });
+    document.querySelectorAll('.image-list-accomodations, .image-list-tourist, .image-list-shopping').forEach(function(element) {
+        element.style.display = "none";
+    });
+  }
+  function showShopping(){
+    document.querySelectorAll('.image-list-shopping').forEach(function(element) {
+        element.style.display = "grid";
+    });
+    document.querySelectorAll('.image-list-accomodations, .image-list-restaurants, .image-list-tourist').forEach(function(element) {
+        element.style.display = "none";
+    });
+  }
   </script>
 
  </body>

@@ -14,10 +14,6 @@ body{
   overflow-y: scroll;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .body {
 -ms-overflow-style: none; 
 scrollbar-width: none;
@@ -91,7 +87,7 @@ header{
   right: 30px;
   width: 30px;
   cursor: pointer;
-  display: none;
+  
 }
 
 /*section*/
@@ -143,12 +139,94 @@ a:hover {
   text-decoration: underline;
 }
 
+
 .line{
   height: 4px;
   width: 95%;
   margin: 10px auto;
   background: #2E5968;
 }
+
+.look{
+  margin-top: 50px;
+  align-items:center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.lf{
+  font-size: 4vmin;
+  margin-bottom: 50px;
+}
+.container{
+  max-width:max-content;
+  width: 95%;
+}
+
+.container .image-list-tourist{
+  display: grid;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.container .image-list-tourist .image-part1 img{
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 18px;
+}
+
+
+.container .image-list-accomodations{
+  display: grid;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.container .image-list-accomodations .image-part2 img{
+  
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 18px;
+}
+
+.container .image-list-restaurants{
+  display: grid;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.container .image-list-restaurants .image-part img{
+  
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 18px;
+}
+
+.container .image-list-shopping{
+  display: grid;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.container .image-list-shopping .image-part img{
+  
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 18px;
+}
+
 @media only screen and (max-width:850px){
   .menu{
     display: block;
