@@ -87,7 +87,7 @@ header{
   right: 30px;
   width: 30px;
   cursor: pointer;
-  
+  display: none;
 }
 
 /*section*/
@@ -227,6 +227,19 @@ a:hover {
   margin-right: 18px;
 }
 
+.footer-container{
+  width: 1140px;
+  margin:auto;
+  display: flex;
+  justify-content: left;
+}
+.footer-content{
+  width: 35%;
+}
+
+.footer-content p{
+  width: 190px;
+}
 @media only screen and (max-width:850px){
   .menu{
     display: block;
