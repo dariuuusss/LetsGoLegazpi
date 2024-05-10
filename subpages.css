@@ -1,0 +1,56 @@
+
+a{
+  text-decoration: none;
+}
+
+.navbar{
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  columns: whitesmoke;
+}
+
+.logopic{
+  width: 100px;
+  height: auto;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.link{
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul{
+  list-style: none;
+}
+
+.navbar-links{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links li{
+  margin: 0 30px;
+}
+.menu{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.line{
+  height: 4px;
+  width: 95%;
+  margin: 10px auto;
+  background: #2E5968;
+}
