@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="eng">
   <head>
-    <title>Legazpi Tourism/Map</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="subpages.css">
+    <title>Legazpi Tourism Project/Map</title>
+    <link rel="stylesheet" href="subpages.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/homepage/Legazpi_City_Tourism_Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+      crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
   <body>
 
@@ -13,67 +20,28 @@
       <p class="logo"><img src="images/homepage/Legazpi_City_Tourism_Logo.png" class="logopic">
       Legazpi City Tourism</p>
       <ul class="navbar-links">
-       <li class="link"><a href="index.html">HOME</a></li>
-       <li class="link"><a href="aboutUs.html">ABOUT US</a></li>
-       <li class="link"><a href="persons.html">LGU</a></li>
+       <li class="link"><a href="index.html" style=" color: #F8F9FA;">HOME</a></li>
+       <li class="link"><a href="aboutUs.html" style=" color: #F8F9FA;">ABOUT US</a></li>
+       <li class="link"><a href="persons.html" style=" color: #F8F9FA;">LGU</a></li>
       </ul>
       <img src="images/homepage/menu.png" alt="menu button" class="menu">
      </nav>
+     <div class="line"></div>
      
-    <div class="content">
-      <h2>City Map</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248682.03887346725!2d123.77317425000001!3d13.12091125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a101687e9bf8a7%3A0x305252e78d14537a!2sLegazpi%20City%2C%20Albay!5e0!3m2!1sen!2sph!4v1715340395758!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
+     <section id="learn" class="p-">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248682.03887346725!2d123.77317425000001!3d13.12091125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a101687e9bf8a7%3A0x305252e78d14537a!2sLegazpi%20City%2C%20Albay!5e0!3m2!1sen!2sph!4v1715340395758!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md p-5">
+            <h2>City Map</h2>
+            <hr>
+          </div>
+        </div>
       </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="ind-content">
-        <img src="images" alt="">
-        <h3></h3>
-        <p></p>
-      </div>
-    </div>
+    </section>
+    <div class="line"></div>
     <footer>
       <div class="footer-container">
         <div class="footer-content">
@@ -94,6 +62,16 @@
         </div>
 
       </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.querySelector('.menu')
+      const navlinks = document.querySelector('.navbar-links');
+      menuBtn.addEventListener('click',()=>{
+       navlinks.classList.toggle('mobile-menu');
+      })
+      </script>
+
     </footer>
   </body>
 </html>

@@ -12,12 +12,10 @@
 body{
   background-image: linear-gradient(to bottom, #2E5968, #93B3C7, #ffff);
   overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }
 
-.body {
--ms-overflow-style: none; 
-scrollbar-width: none;
-}
 
 
 a{
@@ -239,10 +237,10 @@ a:hover {
 .footer-content{
   width: 35%;
 }
-
 .footer-content p{
   width: 190px;
 }
+
 @media only screen and (max-width:850px){
   .menu{
     display: block;
