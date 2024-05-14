@@ -22,6 +22,8 @@ scrollbar-width: none;
 
 a{
   text-decoration: none;
+  color: black;
+
 }
 
 .navbar{
@@ -33,6 +35,7 @@ a{
   justify-content: space-between;
   padding: 20px;
   columns: whitesmoke;
+  
 }
 
 .logopic{

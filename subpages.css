@@ -1,6 +1,7 @@
 
 a{
   text-decoration: none;
+  
 }
 
 .navbar{
@@ -11,6 +12,8 @@ a{
   justify-content: space-between;
   padding: 20px;
   columns: whitesmoke;
+  background-color: #2E5968;
+  color: #F8F9FA;
 }
 
 .logopic{
@@ -50,7 +53,21 @@ ul{
 
 .line{
   height: 4px;
-  width: 95%;
+  width: 98%;
   margin: 10px auto;
   background: #2E5968;
+}
+
+
+
+
+
+#learn {
+  background-color: #ffff;
+  padding: 50px;
+}
+
+#learn1 {
+  background-color: #2E5968;
+  padding: 50px;
 }
