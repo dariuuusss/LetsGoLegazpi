@@ -164,6 +164,18 @@ a:hover {
   width: 95%;
 }
 
+.container .image-part {
+  text-align: left;
+}
+
+.container .image-part p {
+  font-size: 2vmin;
+  margin-top: 10px;
+  color: black;
+}
+.container .image-list-accomodations,
+.container .image-list-restaurants,
+.container .image-list-shopping,
 .container .image-list-tourist{
   display: grid;
   font-size: 0;
@@ -171,57 +183,10 @@ a:hover {
   scrollbar-width: none;
   grid-template-columns: repeat(10, 1fr);
 }
-
-.container .image-list-tourist .image-part1 img{
-  width: 325px;
-  height: 400px;
-  object-fit: cover;
-  margin-right: 18px;
-}
-
-
-.container .image-list-accomodations{
-  display: grid;
-  font-size: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.container .image-list-accomodations .image-part2 img{
-  
-  width: 325px;
-  height: 400px;
-  object-fit: cover;
-  margin-right: 18px;
-}
-
-.container .image-list-restaurants{
-  display: grid;
-  font-size: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.container .image-list-restaurants .image-part img{
-  
-  width: 325px;
-  height: 400px;
-  object-fit: cover;
-  margin-right: 18px;
-}
-
-.container .image-list-shopping{
-  display: grid;
-  font-size: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.container .image-list-shopping .image-part img{
-  
+.container .image-list-shopping .image-part img,
+.container .image-list-restaurants .image-part img,
+.container .image-list-accomodations .image-part img,
+.container .image-list-tourist .image-part img{
   width: 325px;
   height: 400px;
   object-fit: cover;
