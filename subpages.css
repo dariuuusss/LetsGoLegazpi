@@ -35,6 +35,8 @@ a{
   display: flex;
   align-items: center;
   font-weight: bold;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 .link{
   color: whitesmoke;
@@ -82,7 +84,9 @@ ul{
   padding: 50px;
 }
 
-
+.col-md img{
+  width: 100%;
+}
 
 footer{
   background: #2E5968;
@@ -191,10 +195,6 @@ footer{
     height: 20vh;
   }
 
-  #learn{
-    
-    padding-top: 100px;
-  }
   .logo{
     position: absolute;
     top: 30px;
@@ -242,6 +242,10 @@ footer{
     flex-direction: column;
     align-items: center;
     
+  }
+  
+  .col-md img{
+    width: 100%;
   }
 
   .footer-content {

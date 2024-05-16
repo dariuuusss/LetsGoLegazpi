@@ -64,12 +64,12 @@
     <div class="lf">
       <h2>What are you looking for?</h2>
       <a href="#" onclick="showTourist(); event.preventDefault();">Tourist Attractions,</a>
-      <a href="#" onclick="showAccomodations(); event.preventDefault();">Accomodations,</a>
+      <a href="#" onclick="showAccomodations(); event.preventDefault();">Accommodations,</a>
       <a href="#" onclick="showRestaurants(); event.preventDefault();">Restaurants,</a>
-      <a href="#" onclick="showShopping(); event.preventDefault();">Shopping Centers</a>
+      <a href="#" onclick="showShopping(); event.preventDefault();">Shopping Centers</a><br>
     </div>
     <div class="container">
-      <div class="image-list-tourist">
+      <div class="image-list image-list-tourist">
           <div class="image-part">
             <a href="touristAtt.html#tribal house">
               <img src="images/homepage/tourist spot/1.png" alt="">
@@ -143,7 +143,7 @@
           </div>
       </div>
 
-        <div class="image-list-accomodations"   style="display: none">
+        <div class="image-list image-list-accomodations"   style="display: none">
           <div class="image-part">
             <a href="accomodations.html#oriental">
             <img src="images/homepage/accomodations/1.png" alt="">
@@ -216,7 +216,7 @@
           </div>
         </div>
 
-        <div class="image-list-restaurants" style="display: none">
+        <div class="image-list image-list-restaurants" style="display: none">
           <div class="image-part">
             <a href="restaurants.html#smalltalk">
             <img src="images/homepage/restaurants/1.png" alt="">
@@ -275,7 +275,7 @@
           </div>
 
         </div>
-        <div class="image-list-shopping" style="display: none">
+        <div class="image-list image-list-shopping" style="display: none">
           <div class="image-part">
             <a href="malls.html#yashano">
             <img src="images/homepage/malls/1.png" alt="">
@@ -408,6 +408,65 @@
         element.style.display = "none";
     });
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const imageLists = document.querySelectorAll('.image-list');
+  
+  imageLists.forEach(imageList => {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    let isDragging = false;
+
+    imageList.addEventListener('mousedown', (e) => {
+      isDown = true;
+      imageList.classList.add('active');
+      startX = e.pageX - imageList.offsetLeft;
+      scrollLeft = imageList.scrollLeft;
+      isDragging = false;
+    });
+
+    imageList.addEventListener('mouseleave', () => {
+      isDown = false;
+      imageList.classList.remove('active');
+    });
+
+    imageList.addEventListener('mouseup', () => {
+      isDown = false;
+      imageList.classList.remove('active');
+    });
+
+    imageList.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - imageList.offsetLeft;
+      const walk = (x - startX) * 1;
+      imageList.scrollLeft = scrollLeft - walk;
+      isDragging = true;
+    });
+
+    imageList.querySelectorAll('a').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        if (isDragging) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      });
+
+      anchor.addEventListener('mousedown', () => {
+        isDragging = false;
+      });
+
+      anchor.addEventListener('mouseup', () => {
+        if (isDragging) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+        isDragging = false;
+      });
+    });
+  });
+});
   </script>
 
  </body>
