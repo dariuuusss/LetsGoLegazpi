@@ -12,10 +12,11 @@ body{
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 .navbar{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -66,7 +67,7 @@ ul{
 .line{
   height: 4px;
   width: 98%;
-  margin: 10px auto;
+  margin: 20px auto;
   background: #2E5968;
 }
 
@@ -83,12 +84,116 @@ ul{
 
 
 
+footer{
+  background: #2E5968;
+  padding-top: 50px;
+  color: black;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 33.3%;
+}
+
+.footerh3{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-content p{
+  width: fit-content;
+  margin: auto;
+  padding: 7px;
+}
+
+.footer-content ul{
+  text-align: center;
+}
+
+.footer-content a{
+  text-decoration: none;
+  color: black;
+}
+
+.list{
+  padding: 0;
+}
+
+.list li{
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative;
+}
+
+.list li::before{
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #2E5968;
+  transition-duration: .5s;
+}
+
+.list li:hover::before{
+  width: 70px;
+}
+
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.social-icons i{
+  font-size: 25px;
+}
+
+.bottom-bar{
+  background: #182d35;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.bottom-bar p{
+  color: #93B3C7;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+}
 @media only screen and (max-width:850px){
   .menu{
     display: block;
+    position: absolute;
+    top: 60px;
+    right: 40px;
   }
   .navbar{
     padding: 0; 
+    height: 20vh;
+  }
+
+  #learn{
+    
+    padding-top: 100px;
   }
   .logo{
     position: absolute;
@@ -130,6 +235,22 @@ ul{
 
   .col img{
     max-width: 90%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .footer-content {
+    flex: 1 1 30%;
+    margin: 20px;
+  }
+
+  .footer-content p {
+    width: fit-content;
   }
 
 }
