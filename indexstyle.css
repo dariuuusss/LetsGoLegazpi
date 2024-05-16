@@ -144,22 +144,28 @@ a:hover {
 
 
 .line{
-  height: 4px;
-  width: 98%;
-  margin: 10px auto;
-  background: #2E5968;
+  height: 2px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  
+  background: black;
 }
 
 .look{
-  margin-top: 50px;
   align-items:center;
   justify-content: center;
   min-height: 100vh;
 }
 
 .lf{
+  margin-top: 70px;
   font-size: 4vmin;
   margin-bottom: 50px;
+}
+.lf a,
+.lf h2{
+  margin-bottom: 20px;
 }
 .container{
   max-width:max-content;
@@ -224,7 +230,7 @@ a:hover {
 }
 
 footer{
-  background: #2E5968;
+  background: #406877;
   padding-top: 50px;
 }
 

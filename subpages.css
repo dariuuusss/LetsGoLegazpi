@@ -67,10 +67,10 @@ ul{
 }
 
 .line{
-  height: 4px;
+  height: 2px;
   width: 98%;
   margin: 20px auto;
-  background: #2E5968;
+  background: black;
 }
 
 #learn {
@@ -89,7 +89,7 @@ ul{
 }
 
 footer{
-  background: #2E5968;
+  background: #406877;
   padding-top: 50px;
   color: black;
 }
