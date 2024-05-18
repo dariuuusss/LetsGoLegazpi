@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Greycliff';
+  src: url('Demo_Fonts/Fontspring-DEMO-greycliffcf-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Greycliff';
+  src: url('Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Greycliff';
+  src: url('Demo_Fonts/Fontspring-DEMO-greycliffcf-extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style:italic;  
+  font-display: swap;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -9,10 +33,19 @@ body{
   -ms-overflow-style: none; 
   scrollbar-width: none;
 }
-
+h1,h2,h3,h4,h5{
+  font-family: 'Greycliff', Arial, sans-serif;
+  font-weight: bold;
+}
+p{
+  font-family:  Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
 a{
   text-decoration: none;
   color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
 }
 
 .navbar{
@@ -183,6 +216,36 @@ footer{
   font-size: 16px;
   padding: 7px;
 }
+
+/*lgu
+.table-content{
+  
+}*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table tr th{
+  background-color: #406877;
+}
+table tr td,table tr th{
+  border: 1px solid black;
+  text-align: center;
+  width: fit-content;
+}
+
+td, th{
+  padding: 20px;
+  width: fit-content;
+}
+table tr:nth-child(odd) {
+  background-color: #93B3C7;
+}
+.honT{
+  font-size: 13px;
+  font-style: italic;
+}
 @media only screen and (max-width:850px){
   .menu{
     display: block;
@@ -258,3 +321,4 @@ footer{
   }
 
 }
+
