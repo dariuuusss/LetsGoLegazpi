@@ -224,16 +224,16 @@ a:hover {
 .container .image-list {
   display: flex;
   overflow-x: scroll;
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
-  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .container .image-list::-webkit-scrollbar {
-  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+  display: none;
 }
 
 .container .image-list .image-part {
-  min-width: 325px; /* Ensures each image takes up a certain width */
+  min-width: 325px;
   margin-right: 18px;
 }
 
@@ -432,3 +432,6 @@ footer{
   }
 
 }
+
+/*This webpage is for academic purposes only.
+auth.dm*/
